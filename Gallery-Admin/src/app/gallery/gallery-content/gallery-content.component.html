@@ -1,0 +1,29 @@
+<div class="section-full small-device bg-gray">
+  <div class="container">
+    <div class="category-selection">
+      <ul>
+        <li
+          class="category-link default"
+          [ngClass]="{ active: currentCategory === 'all' }"
+        >
+          <a (click)="setCategory('all')">Show all</a>
+        </li>
+        <li *ngFor="let category of categories">
+          <a
+            class="category-link"
+            [ngClass]="{ active: isCategorySelected(category) }"
+            (click)="setCategory(category)"
+            >{{ category }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="images-wrapper">
+    <div *ngFor="let image of images; index as idx" class="image">
+      <img [src]="image.url" width="100%" />
+    </div>
+  </div>
+</div>

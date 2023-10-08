@@ -1,0 +1,16 @@
+.logout {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.logout-link {
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  width: auto;
+}
+
+.logout:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

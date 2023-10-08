@@ -1,0 +1,22 @@
+h2,
+.h2 {
+  margin: 0;
+}
+h3,
+.h3 {
+  font-size: 29px;
+  color: #f0a202;
+  line-height: 35px;
+}
+
+.container .no-images {
+  min-height: 350px;
+}
+
+.no-images {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 100px;
+}

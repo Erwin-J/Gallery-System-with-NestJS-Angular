@@ -1,0 +1,16 @@
+.login-form {
+  margin: 15px 0 185px 0;
+}
+
+.warnings {
+  margin-top: 15px;
+}
+
+.site-button-disabled {
+  background-color: #818c8d !important;
+}
+
+input#username,
+input#password {
+  margin-bottom: 10px;
+}

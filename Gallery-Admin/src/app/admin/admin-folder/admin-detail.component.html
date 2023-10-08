@@ -1,0 +1,75 @@
+<div class="container admin-panel">
+  <div class="upload-images" *ngIf="!isTokenExpired || !loading">
+    <form [formGroup]="uploadForm">
+      <input
+        #uploadField
+        type="file"
+        class="custom-file-input form-control"
+        id="files"
+        multiple
+        (change)="detectFiles($event)"
+        accept="image/x-png,image/jpeg,image/jpg,image/gif"
+      />
+      <button
+        type="button"
+        class="btn btn-success upload-button"
+        (click)="addImages()"
+      >
+        Add Image(s)
+      </button>
+
+      <button type="button" class="btn reset-button" (click)="clear()">
+        Clear
+      </button>
+
+      <div class="images-preview mt-2" *ngIf="photos.length">
+        <div
+          formArrayName="photos"
+          *ngFor="let photo of photos.controls; let i = index"
+        >
+          <div [formGroupName]="i">
+            <img
+              [src]="photo.value.url"
+              class="card-img-top"
+              alt="Image Preview"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="loading" class="uploading-images-loading">
+    <i class="fa fa-spin fa-spinner"></i>Images are being added...
+  </div>
+
+  <div *ngIf="updating" class="uploading-images-loading">
+    <i class="fa fa-spin fa-spinner"></i>Editing images...
+  </div>
+
+  <drag-drop-grid
+    *ngIf="!updating"
+    [items]="images"
+    (onImageReorder)="update($event)"
+    (onDeleteImage)="deleteImage($event)"
+  ></drag-drop-grid>
+
+  <div
+    *ngIf="
+      (!isTokenExpired && !images) ||
+      (!isTokenExpired && !(images && images.length > 0))
+    "
+    class="row align-items-center"
+  >
+    <div class="col-md-auto no-images">No images found.</div>
+  </div>
+
+  <div class="token-expired" *ngIf="isTokenExpired">
+    Warning! Your login session has been terminated. Please login again.
+    <a routerLink="/admin">HERE</a>.
+  </div>
+  <div class="row">
+    <div class="col-md-auto images-back" *ngIf="!isTokenExpired">
+      <a routerLink="/admin">Back to categories</a>
+    </div>
+  </div>
+</div>

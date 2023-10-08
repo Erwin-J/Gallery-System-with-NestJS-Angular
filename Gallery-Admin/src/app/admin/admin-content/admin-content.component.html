@@ -1,0 +1,68 @@
+<div class="admin-panel">
+  <div class="container">
+    <div class="col add-folder" (click)="openPopup()">
+      <i class="fa fa-plus" aria-hidden="true"></i> Add Category
+    </div>
+    <div *ngIf="folders" class="row justify-content-start p-3">
+      <div *ngFor="let folder of folders">
+        <div class="col-auto folder" [routerLink]="['/admin-detail/', folder]">
+          <div class="go-to-folder">
+            <i class="fa fa-folder" aria-hidden="true"></i> {{ folder }}
+          </div>
+        </div>
+        <div class="remove-folder">
+          <span class="remove-folder-link" (click)="onRemoveClicked(folder)"
+            ><i class="fa fa-remove" aria-hidden="true"></i>Delete</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{ display: displayStyle }"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Create Category</h4>
+          </div>
+          <div class="modal-body">
+            <form
+              class="contact-form cons-contact-form"
+              [formGroup]="categoryForm"
+            >
+              <div class="form-group">
+                <input
+                  id="folderName"
+                  type="text"
+                  class="form-control"
+                  formControlName="folderName"
+                  placeholder="Name of category"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              (click)="onCategoryConfirmed()"
+            >
+              Create
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              (click)="closePopup()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <admin-content
+    *ngIf="isUserLoggedIn"
+    [folders]="getFolders$ | async"
+    (createFolder)="createFolder($event)"
+    (removeFolder)="removeFolder($event)"
+  ></admin-content>
+  <admin-login
+    *ngIf="!isUserLoggedIn"
+    [userLoggedOut]="isUserLoggedIn"
+    [isTokenExpired]="isTokenExpired"
+    (userLoggedIn)="onUserLoggedIn()"
+  ></admin-login>
+  <div class="row" *ngIf="isUserLoggedIn">
+    <div class="col-md-auto logout" (click)="logout()">
+      <div class="logout-link">
+        <a>Logout</a>
+      </div>
+    </div>
+  </div>
+</div>

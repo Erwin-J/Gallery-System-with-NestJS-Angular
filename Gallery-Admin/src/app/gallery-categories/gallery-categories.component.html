@@ -1,0 +1,23 @@
+<div class="container gallery-categories">
+  <div class="row justify-content-center">
+    <div
+      *ngFor="let categoriesWithImage of categoriesWithImages"
+      class="col-md-4"
+    >
+      <div class="card card-category">
+        <div class="card-body">
+          <h5 class="card-title card-category-title">
+            <a
+              [routerLink]="[
+                '/gallery-categories/',
+                categoriesWithImage.category
+              ]"
+            >
+              {{ categoriesWithImage.category }}
+            </a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

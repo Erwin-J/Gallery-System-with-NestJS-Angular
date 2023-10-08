@@ -1,0 +1,13 @@
+#navigation {
+  font-size: 20px;
+  text-align: center;
+}
+
+#navigation a {
+  color: #4d8ba8;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  color: #39677c;
+}

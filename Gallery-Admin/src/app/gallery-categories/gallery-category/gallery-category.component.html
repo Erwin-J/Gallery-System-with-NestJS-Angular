@@ -1,0 +1,11 @@
+<div class="container category">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let image of images">
+      <img src="{{ image.url }}" class="img-fluid" />
+    </div>
+  </div>
+
+  <div class="row back">
+    <a [routerLink]="'/gallery-categories'">Go back</a>
+  </div>
+</div>

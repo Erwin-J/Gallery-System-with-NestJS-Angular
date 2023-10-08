@@ -1,0 +1,21 @@
+<div class="drag-drop-wrapper">
+  <div #contenedor class="categories" cdkDropListGroup>
+    <ng-container *ngFor="let item of items; let i = index">
+      <div
+        class="categories-item"
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="{ item: item, index: i }"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="inner" cdkDrag>
+          <div class="drag-image" *cdkDragPlaceholder></div>
+          <div class="loading">
+            <img src="{{ getBackgroundImage(item) }}" alt="{{ item }}" />
+          </div>
+          <div class="remove" (click)="removeImage(item)">Delete</div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

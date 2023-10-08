@@ -1,0 +1,69 @@
+.admin-panel {
+  min-height: 450px;
+}
+
+.folder {
+  font-size: 18px;
+  border: 5px solid #d7d7d7;
+  margin: 0 5px;
+  padding: 5px;
+  display: flex;
+  border-radius: 16px;
+}
+
+.folder:hover {
+  border: 5px solid #535353;
+  cursor: pointer;
+}
+
+.add-folder {
+  font-size: 18px;
+  border: 5px solid #41c50d;
+  background: #d1f3d1;
+  border-radius: 16px;
+  margin: 20px 5px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add-folder:hover {
+  cursor: pointer;
+  border: 5px solid #206107;
+}
+
+.fa-plus {
+  color: #41c50d;
+}
+
+.fa-plus:hover,
+.add-folder:hover .fa-plus {
+  color: #206107;
+}
+
+.go-to-folder:hover {
+  cursor: pointer;
+}
+
+.remove-folder {
+  margin-bottom: 15px;
+  text-align: right;
+  color: #970101;
+}
+
+.remove-folder-link:hover {
+  padding: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  border-color: #fdc6c6;
+}
+
+span.remove-folder-link {
+  border: 5px solid #d7d7d7;
+  border-top: none;
+  margin-bottom: 10px;
+  background: #ffe8e8;
+  padding: 1px;
+  margin-right: 20px;
+  border-radius: 0 0 9px 9px;
+}
