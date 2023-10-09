@@ -45,7 +45,6 @@
 a,
 a:focus,
 a:hover {
-  text-decoration: none;
   outline: 0;
 }
 
@@ -59,6 +58,7 @@ a:hover {
   cursor: pointer;
   color: rgb(238, 111, 111);
 }
+
 .no-images {
   color: #000000;
   text-align: center;
@@ -67,15 +67,8 @@ a:hover {
 }
 
 .images-back {
-  color: #000000;
+  margin-top: 15px;
   text-align: center;
-  font-size: 18px;
-  margin: 15px 0;
-}
-
-.images-back:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .card-img-top img {
@@ -89,6 +82,7 @@ a:hover {
   width: 100%;
   margin-top: 15px;
 }
+
 img.card-img-top {
   max-width: 250px;
   max-height: 250px;
@@ -100,7 +94,7 @@ img.card-img-top {
 .upload-images {
   margin: 10px 0;
   padding: 10px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #dfdfdf;
 }
 .upload-button {
   margin-top: 5px;

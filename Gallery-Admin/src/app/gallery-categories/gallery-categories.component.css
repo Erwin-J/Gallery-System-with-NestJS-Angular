@@ -9,3 +9,11 @@
 .card-category-title {
   text-align: center;
 }
+
+.no-images {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 85px;
+}

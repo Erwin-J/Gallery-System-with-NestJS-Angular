@@ -1,12 +1,12 @@
-##NestJS & Angular Gallery System
+## NestJS & Angular Gallery System
 
-#Hello!
+# Hello!
 
 This is an example application how to use nodeJS while creating a very simple gallery system that includes a JWT authentication system.
 Furthermore, NestJS will host Angular (production version) and contains logic to make changes to your gallery without making the use of a database system.
 Shortly explained, the NodeJS backend will only make usage of the folders and files. You can also change the order of the images. This is based on namings (automatically appended) such as [0], [1], ...
 
-#You are able to:
+# You are able to:
 
 - Login with credentials
 - Logout
@@ -20,12 +20,12 @@ Shortly explained, the NodeJS backend will only make usage of the folders and fi
   - Visualize images by the selected category
 - Have NestJS host the Angular framework as an entrance point
 
-#What you will need to:
+# What you will need to:
 
 - Check the .env files and correct them for NodeJs
 - Do the same for the environment files in Angular
 
-#Running locally
+# Running locally
 
 NestJS:
 

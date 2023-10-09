@@ -44,7 +44,8 @@
 }
 
 img {
-  max-width: 150px !important;
+  width: 150px;
+  height: 150px;
   border-radius: 3px 3px 0 0;
   border: 5px solid #dddddd;
   border-bottom-width: 8px;

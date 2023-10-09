@@ -65,11 +65,10 @@
 
   <div class="token-expired" *ngIf="isTokenExpired">
     Warning! Your login session has been terminated. Please login again.
-    <a routerLink="/admin">HERE</a>.
+    <a routerLink="'/admin'">HERE</a>.
   </div>
-  <div class="row">
-    <div class="col-md-auto images-back" *ngIf="!isTokenExpired">
-      <a routerLink="/admin">Back to categories</a>
-    </div>
+
+  <div class="images-back" *ngIf="!isTokenExpired">
+    <a [routerLink]="'/admin'">Back to categories</a>
   </div>
 </div>

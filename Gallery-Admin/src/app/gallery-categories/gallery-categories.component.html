@@ -19,5 +19,15 @@
         </div>
       </div>
     </div>
+
+    <div
+      *ngIf="
+        !categoriesWithImages ||
+        (categoriesWithImages && categoriesWithImages.length === 0)
+      "
+      class="no-images"
+    >
+      There are no images available
+    </div>
   </div>
 </div>

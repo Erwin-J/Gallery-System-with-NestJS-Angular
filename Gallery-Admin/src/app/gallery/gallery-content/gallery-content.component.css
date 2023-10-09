@@ -12,10 +12,6 @@
   width: 20%;
 }
 
-.image:hover {
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 600px) {
   .image {
     width: 50%;
