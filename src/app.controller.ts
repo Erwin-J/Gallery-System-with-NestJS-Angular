@@ -1,4 +1,4 @@
-import { Controller, Get, Redirect } from '@nestjs/common';
+import { Controller, Get, Redirect } from "@nestjs/common";
 
 @Controller()
 export class AppController {
@@ -7,6 +7,6 @@ export class AppController {
   @Get()
   @Redirect()
   redirect(): any {
-    return { url: '/home' };
+    return { url: "/admin" };
   }
 }

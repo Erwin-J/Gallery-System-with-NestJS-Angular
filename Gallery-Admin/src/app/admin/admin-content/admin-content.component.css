@@ -41,6 +41,11 @@
   color: #206107;
 }
 
+.go-to-folder {
+  text-align: center;
+  width: 100%;
+}
+
 .go-to-folder:hover {
   cursor: pointer;
 }
@@ -52,8 +57,6 @@
 }
 
 .remove-folder-link:hover {
-  padding: 3px;
-  font-weight: 500;
   cursor: pointer;
   border-color: #fdc6c6;
 }

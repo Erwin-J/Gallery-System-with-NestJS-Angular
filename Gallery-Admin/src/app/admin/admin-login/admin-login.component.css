@@ -1,5 +1,17 @@
-.login-form {
-  margin: 15px 0 185px 0;
+form.login-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+}
+
+form.login-form input {
+  width: 100%;
+  max-width: 500px;
+  margin: 5px 0;
 }
 
 .warnings {

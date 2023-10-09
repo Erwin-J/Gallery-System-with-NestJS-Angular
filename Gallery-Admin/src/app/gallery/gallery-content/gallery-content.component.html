@@ -21,9 +21,11 @@
   </div>
 </div>
 <div class="container">
-  <div class="images-wrapper">
-    <div *ngFor="let image of images" class="image">
-      <img [src]="image.url" width="100%" />
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let image of images">
+      <div class="image-card">
+        <img src="{{ image.url }}" class="img-cover" alt="Image" />
+      </div>
     </div>
   </div>
 </div>
