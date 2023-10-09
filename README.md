@@ -1,5 +1,11 @@
 # NestJS & Angular Gallery System
 
+![image](https://github.com/Erwin-J/Gallery-System-with-NestJS-Angular/assets/30557870/a4a7b5f8-f455-4754-a4cf-464d38b1c266)
+![image](https://github.com/Erwin-J/Gallery-System-with-NestJS-Angular/assets/30557870/99d71bb0-f2e2-41c5-9e1a-fe9a792d161f)
+![image](https://github.com/Erwin-J/Gallery-System-with-NestJS-Angular/assets/30557870/27163566-8bf2-4e5b-8e51-7f5d035748e2)
+
+
+
 ## Hello!
 
 This is an example application how to use nodeJS while creating a very simple gallery system that includes a JWT authentication system.
